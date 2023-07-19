@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Portfolio</a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="main">
+            <div class="detail">
+                <h1><span>Hi, It's Me</span> <br><span style="color:#00E8F8;">Adarsha Chaulagain</span></h1>
+                <p> frontend web developer, designer, <br> motivated and enthusiastic learner. </p>
+                <div class="social">
+                    <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adarsha-chaulagain-2600b5212/" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
+                            class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="photo.jpg" alt="" width="100%" style="border-radius: 50%;">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="about" id="about">
+        <h1>About me </h1>
+        <p>
+            Hi! I am Adarsha Chaulagain, an undergraduate IT student. Currently, I am enrolled into
+            Bachelor of Science in Computer Science and Information Technology program at Tribhuvan
+            University, Nepal.Besides my studies, I am actively involved
+            in Web Devlopment and Designing and usually spend my time improving these skills.
+        </p>
+        <div class="list">
+            <div class="edu">
+                <h3>My education</h3>
+                <p>Bsc.CSIT running at Tribhuvan University <br>
+                    +2 science from Xavier Int'l College</p>
+            </div>
+            <div class="exp">
+                <h3>My Experience</h3>
+                <p>Made some projects starting with making clone of different website. <br>
+                    active member in different renowned IT organization.</p>
+            </div>
+        </div>
+
+        <div class="list2">
+            <div>
+                <h3>Skils</h3>
+                <p>Front-End Development:HTML CSS JS <br>
+                    Design Tools: Figma, Canva <br>
+                    Version Control: Git, Github</p>
+            </div>
+            <div class="achiv">
+                <h3>Achievements</h3>
+                <p>created different projects, <br> organized events successfully , <br>
+                    also actively participated in different program.</p>
+            </div>
+        </div>
+        <div>
+            <p>I am also pretty good in designing.I have some expertise in creating logos,posters,
+                editing photos, and other related tasks.</p>
+        </div>
+
+    </section>
+    <hr>
+    <section class="project" id="project">
+        <h1>My projects</h1>
+        <div class="container">
+            <div class="container1">
+                <div class="Recipe">
+                    <button class="btn-body" onclick="redirectToRecipe()">
+                        Cocktail recipe
+                    </button>
+                </div>
+
+                <div class="clock">
+                    <button class="btn-body" onclick="redirectToClock()">
+                        Clock
+                    </button>
+                </div>
+
+                <div class="netflix" onclick="redirectToLogin()">
+                    <button class="btn-body">
+                        Login page
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <div class="portfolio" onclick="redirectToPortfolio()">
+                    <button class="btn-body">
+                        Portfolio
+                    </button>
+                </div>
+
+                <div class="calculator" onclick="redirectToCalculator()">
+                    <button class="btn-body">
+                        Calculator
+                    </button>
+                </div>
+
+                <div class="note" onclick="redirectToNote()">
+                    <button class="btn-body">
+                        Note
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            function redirectToRecipe() {
+                window.location.href = "https://adarshadrinkrecipe.netlify.app/";
+            }
+
+            function redirectToClock() {
+                window.location.href = "https://adarshaclock.netlify.app/";
+            }
+
+            function redirectToLogin() {
+                window.location.href = "https://adarshalogin.netlify.app/";
+            }
+
+            function redirectToPortfolio() {
+                window.location.href = "portfolio.html";
+            }
+
+            function redirectToCalculator() {
+                window.location.href = "https://adarshacalculator.netlify.app/";
+            }
+
+            function redirectToNote() {
+                window.location.href = "https://adarshanote.netlify.app/";
+            }
+        </script>
+
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Contact me</h1>
+
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/adarsha-chaulagain-2600b5212/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+
+            <div class="profile">
+                <a><img src="https://www.svgrepo.com/show/304548/call.svg" /> 9860491620</a>
+                <a> <img src="https://www.svgrepo.com/show/223047/gmail.svg" /> chaulagainaadarsha7@gmail.com </a>
+                <a><img src="https://www.svgrepo.com/show/129908/location.svg" /> Kathmandu, Nepal</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+</style>
+<!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+  </style> -->
+
+</html>
