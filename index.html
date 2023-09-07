@@ -168,9 +168,8 @@
     </section>
     <hr>
     <section class="contact" id="contact">
+        <h1>Contact me</h1>
         <div class="container">
-            <h1>Contact me</h1>
-
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
                         class="bi bi-facebook"></i></a>
@@ -182,22 +181,32 @@
             </div>
 
             <div class="profile">
-                <a><img src="https://www.svgrepo.com/show/304548/call.svg" /> 9860491620</a>
-                <a> <img src="https://www.svgrepo.com/show/223047/gmail.svg" /> chaulagainaadarsha7@gmail.com </a>
-                <a><img src="https://www.svgrepo.com/show/129908/location.svg" /> Kathmandu, Nepal</a>
+                <a><ion-icon name="call-outline"></ion-icon>9860491620</a>
+                <a><ion-icon name="mail-outline"></ion-icon> chaulagainaadarsha7@gmail.com</a>
+                <a><ion-icon name="location-outline"></ion-icon> Kathmandu, Nepal</a>
             </div>
+        </div>
+
+        <div class="form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Send">                   
+            </form>
         </div>
     </section>
 
-
-
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 </style>
-<!-- <style>
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-  </style> -->
-
 </html>

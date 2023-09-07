@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -341,12 +344,19 @@ button a {
 }
 
 .contact {
-    
+    display: flex;
+    color: white;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .contact h1 {
     color: #00E8F8;
+    margin-bottom: 20px;
+}
+.social, .form{
+    margin: 57px 0 0 0; 
+    flex: 1;
 }
 
 .contact .social{
@@ -364,15 +374,81 @@ button a {
     color: white;
     gap: 10px;
     display: flex;
-    align-items: left;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 
-.profile a img {
+.profile a ion-icon {
     color: #00E8F8;
     width: 20px;
     height: 20px;
 } 
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 168px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 400px;
+    
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
 
+  #name, #email, #message{
+    color: white;
+  }
+  input[type="submit"] {
+    background-color: #00E0FF;
+    font-size: 16px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    margin-top: 24px;
+    padding: 6px 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
 
+  @media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social, .form {
+        margin: 20px 0;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
