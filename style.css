@@ -306,8 +306,10 @@ button {
 
 button:hover {
     background-color: transparent;
-    border: 2px solid #00E8F8;
+    border: 3px solid #00E8F8;
     cursor: pointer;
+    transform: scale(1.15);
+    color: #3e8e41;
 }
 
 button a {
