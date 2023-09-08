@@ -405,8 +405,7 @@ button a {
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    width: 400px;
-    
+    width: 400px;  
   }
   
   textarea {
@@ -415,7 +414,7 @@ button a {
   
 
   #name, #email, #message{
-    color: white;
+    color: #000000;
   }
   input[type="submit"] {
     background-color: #00E0FF;
