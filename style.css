@@ -87,6 +87,17 @@ section {
     color: #fff;
 }
 
+#element{
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #fff;
+}
+.typed-cursor{
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #fff;
+}
+
 .social {
     display: flex;
     flex-wrap: wrap;

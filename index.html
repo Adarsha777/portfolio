@@ -34,7 +34,9 @@
         <div class="main">
             <div class="detail">
                 <h1><span>Hi, It's Me</span> <br><span style="color:#00E8F8;">Adarsha Chaulagain</span></h1>
-                <p> frontend web developer, designer, <br> motivated and enthusiastic learner. </p>
+                <!-- <p> frontend web developer, designer, <br> motivated and enthusiastic learner. </p> -->
+                <span id="element"></span>
+                
                 <div class="social">
                     <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
                     <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
@@ -49,6 +51,15 @@
                 <img src="photo.jpg" alt="" width="100%" style="border-radius: 50%;">
             </div>
         </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Frontend web developer', 'Designer','Enthusiastic learner'],
+              typeSpeed: 35,
+              backSpeed: 20,
+              loop: true,
+            });
+          </script>
     </section>
 
     <hr>
