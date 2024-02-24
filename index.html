@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-
 <body>
     <header>
-        <div class="logo">
+        <div class="logo" id="portfolioLogo">
             <a href="#">Portfolio</a>
         </div>
         <input type="checkbox" id="click">
@@ -21,22 +19,29 @@
                 <i class="bi bi-list"></i>
             </div>
         </label>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+        <nav class="sticky-navbar">
+            <a href="#home" class="scroll-link active">Home</a>
+            <a href="#about" class="scroll-link" onclick="smoothScrollTo('about')">About</a>
+            <a href="#project" class="scroll-link" onclick="smoothScrollTo('project')">Project</a>
+            <a href="#contact" class="scroll-link" onclick="smoothScrollTo('contact')">Contact</a>
         </nav>
     </header>
-
-
+    <script>
+        function smoothScrollTo(target) {
+            const targetElement = document.getElementById(target);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth",
+                });
+            }
+        }
+    </script>
     <section class="home" id="home">
         <div class="main">
             <div class="detail">
                 <h1><span>Hi, It's Me</span> <br><span style="color:#00E8F8;">Adarsha Chaulagain</span></h1>
-                <!-- <p> frontend web developer, designer, <br> motivated and enthusiastic learner. </p> -->
                 <span id="element"></span>
-                
                 <div class="social">
                     <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
                     <a href="https://www.instagram.com/adarsha_chaulagain/?next=%2F" target="_blank"><i
@@ -61,7 +66,6 @@
             });
           </script>
     </section>
-
     <hr>
     <section class="about" id="about">
         <h1>About me </h1>
@@ -83,7 +87,6 @@
                     active member in different renowned IT organization.</p>
             </div>
         </div>
-
         <div class="list2">
             <div>
                 <h3>Skils</h3>
@@ -101,7 +104,6 @@
             <p>I am also pretty good in designing.I have some expertise in creating logos,posters,
                 editing photos, and other related tasks.</p>
         </div>
-
     </section>
     <hr>
     <section class="project" id="project">
@@ -113,42 +115,34 @@
                         Cocktail recipe
                     </button>
                 </div>
-
                 <div class="clock">
                     <button class="btn-body" onclick="redirectToClock()">
                         Clock
                     </button>
                 </div>
-
                 <div class="netflix" onclick="redirectToLogin()">
                     <button class="btn-body">
                         Login page
                     </button>
                 </div>
-
             </div>
-
             <div class="container2">
                 <div class="portfolio" onclick="redirectToPortfolio()">
                     <button class="btn-body">
                         Portfolio
                     </button>
                 </div>
-
                 <div class="calculator" onclick="redirectToCalculator()">
                     <button class="btn-body">
                         Calculator
                     </button>
                 </div>
-
                 <div class="note" onclick="redirectToNote()">
                     <button class="btn-body">
                         Note
                     </button>
                 </div>
-
             </div>
-
         </div>
         <script>
             function redirectToRecipe() {
@@ -175,12 +169,11 @@
                 window.location.href = "https://adarshanote.netlify.app/";
             }
         </script>
-
     </section>
     <hr>
     <section class="contact" id="contact">
         <h1>Contact me</h1>
-        <div class="container">
+        <div class="containerC">          
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=100004305526936" target="_blank"><i
                         class="bi bi-facebook"></i></a>
@@ -190,34 +183,40 @@
                         class="bi bi-linkedin"></i></a>
                 <a href="https://github.com/Adarsha777" target="_blank"><i class="bi bi-github"></i></a>
             </div>
-
             <div class="profile">
-                <a><ion-icon name="call-outline"></ion-icon>9860491620</a>
-                <a><ion-icon name="mail-outline"></ion-icon> chaulagainaadarsha7@gmail.com</a>
-                <a><ion-icon name="location-outline"></ion-icon> Kathmandu, Nepal</a>
+                  <a><ion-icon name="call-outline"></ion-icon>9860491620</a>
+                  <a><ion-icon name="mail-outline"></ion-icon> chaulagainaadarsha7@gmail.com</a>
+                  <a><ion-icon name="location-outline"></ion-icon> Kathmandu, Nepal</a>
             </div>
         </div>
 
-        <div class="form">
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <input type="submit" value="Send">                   
-            </form>
-        </div>
+            <div class="form">
+                <form action="https://formsubmit.co/abd412b68fc98d4acf64f168ed6c3abc" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <input type="submit" value="Send">                   
+                </form>
+            </div>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="script.js">
+        
+    </script>
 </body>
+
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 </style>
+
 </html>

@@ -10,18 +10,31 @@ body {
     font-family: 'Poppins', sans-serif;
     max-height: 100vh;
     background-color: #1F252E;
+    padding-top: 70px;
 }
 
+
+
 header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     padding: 1.7rem 1rem;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     margin: auto;
     align-items: center;
-    background-color: transparent;
+    z-index: 1000; 
+    transition: background-color 0.3s ease;
 }
+header.scrolled {
+    background-color: #1F252E; 
+}
+
 
 .logo {
     font-size: 1.3rem;
@@ -50,6 +63,17 @@ nav a:hover {
     transition: all.3s ease-in-out;
 }
 
+nav a.active {
+    border-bottom: 2px solid #00E8F8;
+}
+
+.home,
+.about,
+.project,
+.contact {
+    margin-top: 70px; 
+}
+
 #click {
     display: none;
 }
@@ -59,12 +83,13 @@ nav a:hover {
 }
 
 .menu {
+    background-color: transparent;
     display: none;
 }
 
 section {
     margin: 2rem 8.5rem;
-    ;
+    margin-top: 70px;
 }
 
 .main {
@@ -141,6 +166,7 @@ section {
     background-size: cover;
 }
 
+  
 @media only screen and (max-width:580px) {
     .menu {
         display: block;
@@ -153,6 +179,7 @@ section {
         padding: 0.7rem 1rem;
         align-items: center;
         max-width: 100%;
+
     }
 
     nav {
@@ -238,12 +265,6 @@ hr {
     color: #4f6d7b;
 }
 
-/* .list2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 60px 0;
-} */
 .achiv{
     padding-right: 157px;
 }
@@ -304,7 +325,7 @@ hr {
 
 button {
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     border: 2px solid white;
     font-weight: bold;
@@ -317,10 +338,10 @@ button {
 
 button:hover {
     background-color: transparent;
-    border: 3px solid #00E8F8;
+    border: 2px solid #00E8F8;
     cursor: pointer;
-    transform: scale(1.15);
-    color: #3e8e41;
+    transform: scale(1.2);
+    color: #f6ca05;
 }
 
 button a {
@@ -356,7 +377,7 @@ button a {
     }
 }
 
-.contact {
+ .contact {
     display: flex;
     color: white;
     padding: 20px;
@@ -396,6 +417,7 @@ button a {
     width: 20px;
     height: 20px;
 } 
+
   
   form {
     display: flex;
@@ -416,7 +438,8 @@ button a {
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    width: 400px;  
+    width: 400px;
+    
   }
   
   textarea {
@@ -425,7 +448,7 @@ button a {
   
 
   #name, #email, #message{
-    color: #000000;
+    color: white;
   }
   input[type="submit"] {
     background-color: #00E0FF;
@@ -444,7 +467,7 @@ button a {
   
   input[type="submit"]:hover {
     background-color: #3e8e41;
-  }
+  } 
 
   @media screen and (max-width: 768px) {
     .contact {
@@ -464,3 +487,4 @@ button a {
         width: 100%;
     }
 }
+
