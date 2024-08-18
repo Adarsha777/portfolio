@@ -90,8 +90,8 @@
         <div class="list2">
             <div>
                 <h3>Skils</h3>
-                <p>Front-End Development:HTML CSS JS <br>
-                    Design Tools: Figma, Canva <br>
+                <p>Front-End Development:HTML CSS JS React PHP<br>
+                    Design Tools: Figma, Canva, Photoshop <br>
                     Version Control: Git, Github</p>
             </div>
             <div class="achiv">
@@ -158,7 +158,7 @@
             }
 
             function redirectToPortfolio() {
-                window.location.href = "portfolio.html";
+                window.location.href = "index.html";
             }
 
             function redirectToCalculator() {
@@ -191,12 +191,15 @@
         </div>
 
             <div class="form">
-                <form action="https://formsubmit.co/abd412b68fc98d4acf64f168ed6c3abc" method="POST">
+                <form action="submit-form.php" method="POST">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
         
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+
+                    <label for="contact">Contact number:</label>
+                    <input type="number" id="contact" name="contact" required>
         
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>

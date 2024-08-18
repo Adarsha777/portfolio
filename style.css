@@ -447,8 +447,8 @@ button a {
   }
   
 
-  #name, #email, #message{
-    color: white;
+  #name, #email, #message,#contact{
+    color: rgb(0, 0, 0);
   }
   input[type="submit"] {
     background-color: #00E0FF;
